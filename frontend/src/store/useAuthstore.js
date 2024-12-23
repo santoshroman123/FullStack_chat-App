@@ -4,7 +4,7 @@ import toast from "react-hot-toast";
 import { LogOut } from "lucide-react";
 import {io} from "socket.io-client";
 
-const baseURL=import.meta.env.MODE==="development" ? "http://localhost:5001" : "/"
+const baseURL=import.meta.env.MODE==="development" ? "http://localhost:5000" : "/"
 export const useAuthstore=create((set,get)=>({
     authUser:null,
     isSignup:false,
